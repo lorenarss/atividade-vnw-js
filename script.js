@@ -1,4 +1,4 @@
-/* Atividade 01
+/* /* Atividade 01
 
 let aluno = "lorena"
 let numero = 20
@@ -71,7 +71,7 @@ if (sobrenome.length > 6 || sobrenome.startsWith("e") ) {
 //4- Criar um loop que conte todos os números pares de 0 a 100
  */
 
-let count;
+/* let count;
 
 for (let count = 0; count <= 10; count++) {
   console.log(count);
@@ -111,7 +111,7 @@ for(let par=0; par<=100; par+=2){
  */
 
 
-function mensagem() {
+/* function mensagem() {
     console.log("Eu sou uma mensagem no console");
 }
 mensagem;
@@ -132,3 +132,51 @@ function gostos2(filme, musica) {
 }
 
 gostos2("a voltados que não foram", "uma musica")
+
+ */
+
+// -----Atividade 04--------------------
+
+ // Crie um array que receba 5 itens e exiba no console.
+
+// Utilize um método para adicionar um nome ao inicio do array.
+
+// Utilize um método para remover o último nome do array.
+
+// Utilize um método para adicionar dois nomes ao fim do array.
+
+// Utilize um método para remover o primeiro nome do array.
+
+// Utilize um método para organizar em ordem crescente o seguinte array:
+// let numbers = [7,5,6,3,8,9,2,1,4]
+
+
+let dados = [ 'Lorena', 'Silva', 28 , true, 'ana']
+
+console.log(dados)
+
+dados.unshift('a')
+
+console.log(dados)
+
+dados.pop()
+
+console.log(dados)
+
+dados.push('Isa', 'taise')
+
+console.log(dados)
+
+dados.shift(0)
+
+console.log(dados)
+
+let numbers = [7,5,6,3,8,9,2,1,4]
+
+numbers.sort()
+
+numbers.sort(function(a, b) {
+    return a-b //comparar a até b
+})
+
+console.log(numbers)
