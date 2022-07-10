@@ -135,7 +135,7 @@ gostos2("a voltados que não foram", "uma musica")
 
  */
 
-// -----Atividade 04--------------------
+// -----Atividade 05--------------------
 
  // Crie um array que receba 5 itens e exiba no console.
 
@@ -151,7 +151,7 @@ gostos2("a voltados que não foram", "uma musica")
 // let numbers = [7,5,6,3,8,9,2,1,4]
 
 
-let dados = [ 'Lorena', 'Silva', 28 , true, 'ana']
+/* let dados = [ 'Lorena', 'Silva', 28 , true, 'ana']
 
 console.log(dados)
 
@@ -180,3 +180,91 @@ numbers.sort(function(a, b) {
 })
 
 console.log(numbers)
+ */
+
+
+///----------Atividade 06 "Objeto"
+
+// Crie um objeto que receba ao menos três propriedades sobre você.
+
+// Adicione uma nova propriedade sem alterar seu objeto inicial.
+
+// Remova uma propriedade desse objeto.
+
+//Mostre no console todas as propriedades desse objeto.
+
+// Crie um array  chamado "cadastro" contendo ao menos 5 objetos. 
+//Cada objeto deve receber as seguintes propriedades: nome,  idade,  telefone, amigos. 
+//Na propriedade amigos, adicione ao menos 4 itens.
+
+// Mostre no console o nome de um amigo de cada lista.
+
+
+let lorena = new Object();
+
+lorena.idade = 28;
+lorena.altura = 1.60;
+lorena.endereco = 'Passagem bom futuro, 328';
+
+console.log(lorena);
+
+lorena.amigos = 'Pedro';
+console.log(lorena);
+delete lorena.idade;
+console.log(lorena);
+
+const props = Object.keys(lorena);
+console.log(props);
+
+//---------------
+
+let cadastro = [];
+let amigoP1 = [];
+amigoP1.push('Ana', 'Pedro', 'Joao', 'Rita');
+
+let person1 = {
+    nome: 'pessoa1',
+    idade: 18,
+    telefone: '00-9999-9999',
+}
+person1.amigos = amigoP1;
+console.log(person1);
+
+let person2 = {
+    nome: 'pessoa2',
+    idade: 18,
+    telefone: '00-9969-9999',
+}
+let amigoP2 = [];
+amigoP2.push('vivi', 'diogo', 'carla', 'debora');
+person2.amigos = amigoP2;
+
+let person3 = {
+    nome: 'pessoa3',
+    idade: 23,
+    telefone: '00-9949-9999',
+}
+let amigoP3 = [];
+amigoP3.push('thiago', 'babi', 'joca', 'Arlindo');
+person3.amigos = amigoP3;
+
+let person4 = {
+    nome: 'pessoa4',
+    idade: 34,
+    telefone: '00-9994-9999',
+}
+let amigoP4 = [];
+amigoP4.push('ze', 'jojo', 'victor', 'paula');
+person4.amigos = amigoP4;
+
+let person5 = {
+    nome: 'pessoa5',
+    idade: 55,
+    telefone: '00-9993-9999',
+}
+let amigoP5 = [];
+amigoP5.push('gugu', 'pietro', 'julia', 'maria');
+person5.amigos = amigoP5;
+
+cadastro.push(person1, person2, person3, person4, person5);
+console.log(amigoP1[0], amigoP2[1], amigoP3[2], amigoP4[3], amigoP5[0]);
